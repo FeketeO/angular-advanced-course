@@ -13,7 +13,7 @@ export class AuthService {
 
   loginUrl = `${this.config.apiUrl}login`;
   logoutnUrl = `${this.config.apiUrl}logout`;
-  currentUserSubject: BehaviorSubject<User> = new BehaviorSubject({});
+  currentUserSubject: BehaviorSubject<User> = new BehaviorSubject(null);
   lastToken: string = '';
 
 
